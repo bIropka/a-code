@@ -97,3 +97,56 @@ html, body, .wrapper {
     text-align: center;
     line-height: 1.2;
 }
+
+/* header */
+.header-top {
+    padding: 2.5% 5% 6%;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 149px;
+    height: 37px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: cover;
+    float: left;
+}
+.form-search {
+    display: inline-block;
+    vertical-align: middle;
+    height: 37px;
+    border: 1px solid #ececec;
+    margin-left: 7.5%;
+    float: left;
+}
+.form-search .form-field-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
+}
+.form-search .form-field {
+    width: 270px;
+    height: 100%;
+    padding: 0 15px;
+}
+.form-search input[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 31px;
+    background: #0068ba;
+    margin-right: 2px;
+    color: #ffffff;
+    font-family: "OpenSans Semibold", sans-serif;
+}
+
+.sign-block {
+    display: inline-block;
+    vertical-align: middle;
+    height: 37px;
+    float: right;
+}
+nav {
+
+}
