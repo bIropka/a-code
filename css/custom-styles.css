@@ -1,6 +1,6 @@
 @font-face {font-family: "OpenSans Regular";src: url("../fonts/OpenSans-Regular.ttf");}
-@font-face {font-family: "OpenSans Semibold";src: url("../fonts/OpenSans-Semibold.ttf");}
 @font-face {font-family: "OpenSans Bold";src: url("../fonts/OpenSans-Bold.ttf");}
+
 
 /* general rules */
 * {
@@ -16,16 +16,14 @@
 
 a, button, input[type="submit"] {
     cursor: pointer;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
 }
 
 a, a:hover, a:active {
     outline: none;
     border: none;
+}
+a:hover {
+    text-decoration: none;
 }
 button, button:hover, button:active {
     outline: none;
@@ -65,6 +63,7 @@ ul li {display: inline-block;}
 h1 {
     font-family: "OpenSans Regular", sans-serif;
     font-size: 36px;
+    font-weight: 100;
 }
 h2 {
     font-family: "OpenSans Bold", sans-serif;
@@ -100,7 +99,7 @@ html, body, .wrapper {
 
 /* header */
 .header-top {
-    padding: 2.5% 5% 6%;
+    padding: 25px 50px 50px;
 }
 .logo {
     display: inline-block;
@@ -138,7 +137,7 @@ html, body, .wrapper {
     background: #0068ba;
     margin-right: 2px;
     color: #ffffff;
-    font-family: "OpenSans Semibold", sans-serif;
+    font-family: "OpenSans Bold", sans-serif;
 }
 
 .sign-block {
@@ -147,6 +146,174 @@ html, body, .wrapper {
     height: 37px;
     float: right;
 }
+.sign-block .sign-in {
+    display: inline-block;vertical-align: middle;
+    color: #0068ba;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.sign-block .sign-up {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    height: 37px;
+    line-height: 37px;
+    font-family: "OpenSans Bold", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background: #0068ba;
+    text-decoration: none;
+}
 nav {
+    display: block;
+    width: 100%;
+    background: #7f9fae;
+    text-align: center;
+}
+nav ul li {
+    position: relative;
+    margin: 0 3px;
+}
+nav ul li a {
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+    font-family: "OpenSans Regular", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 5px;
+    font-weight: 600;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 58px;
+    left: 0;
+    text-align: left;
+    background: #548094;
+}
+nav ul li ul li {
+    width: 100%;
+    margin-top: 5px;
+}
+nav ul li ul li:last-child {
+    margin-bottom: 5px;
+}
+nav ul li ul li a {
+    height: 20px;
+    line-height: 20px;
+    font-weight: 100;
+}
+nav ul li ul li:hover {
+    background: #7f9fae;
+}
+nav ul li:hover {
+    background: #548094;
+}
+nav ul li:hover ul {
+    display: block;
+}
+.image-server-room {
+    display: block;
+    width: 100%;
+    padding-top: 33.33333%;
+    background: url('../images/background-header.png') no-repeat center;
+    background-size: cover;
+}
 
+.products {
+    padding: 50px 0 75px;
+    background: url('../images/background-abstract.png') no-repeat center;
+    background-size: cover;
+}
+.products .block-content>ul>li {
+    width: 250px;
+    margin: 25px 10px;
+    background: #ffffff;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.products .block-content>ul>li:hover {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.products h2 {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #7f9fae;
+    margin-bottom: 10px;
+}
+.products ul li ul li {
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #ececec;
+    text-align: left;
+}
+.products ul li ul li:last-child {
+    border-bottom: none;
+}
+.products .parameter-name {
+    font-size: 12px;
+    color: #9d9e9e;
+    display: inline-block;
+    width: 54%;
+    padding-left: 10px;
+}
+.products .parameter-value {
+    font-size: 16px;
+    display: inline-block;
+    width: 44%;
+    padding-left: 10px;
+}
+.products .product-cost {
+    font-family: "OpenSans Bold", sans-serif;
+    font-size: 24px;
+}
+.products button {
+    width: 175px;
+    height: 45px;
+    line-height: 45px;
+    background: #0068ba;
+    margin: 30px 0;
+    font-family: "OpenSans Bold", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+.products button:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    background: url('../images/sprite-basket.png') no-repeat left center;
+    background-size: cover;
+}
+.products button:hover {
+    background: #ffcc00;
+    border-bottom: 2px solid #ffa600;
+}
+.products button:hover:after {
+    background: url('../images/sprite-basket.png') no-repeat right center;
+    background-size: cover;
 }
