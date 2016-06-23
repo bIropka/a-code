@@ -7,4 +7,10 @@ $(document).ready(function () {
         autoplaySpeed: 6000
     });
 
+
+    $('.mobile-menu').click(function() {
+        $('nav ul').slideToggle();
+        $(this).toggleClass('opened');
+    });
+
 });
