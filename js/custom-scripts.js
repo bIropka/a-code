@@ -13,4 +13,16 @@ $(document).ready(function () {
         $(this).toggleClass('opened');
     });
 
+    $('.reg-item').click(function() {
+        $('.reg-item').removeClass('active');
+        $(this).addClass('active');
+        if($(this).hasClass('reg-person')) {
+            $('.form-reg-person').fadeIn();
+            $('.form-reg-org').fadeOut(0);
+        } else {
+            $('.form-reg-person').fadeOut(0);
+            $('.form-reg-org').fadeIn();
+        }
+    });
+
 });

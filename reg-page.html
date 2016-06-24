@@ -65,11 +65,8 @@
     <div class="reg-page block-content">
 
         <ul class="reg-control">
-            <li class="reg-empty"></li>
-            <li class="reg-person">Физическое лицо</li>
-            <li class="reg-empty"></li>
-            <li class="reg-org">Юридическое лицо</li>
-            <li class="reg-empty"></li>
+            <li class="reg-person reg-item active">Физическое лицо</li>
+            <li class="reg-org reg-item">Юридическое лицо</li>
         </ul>
 
         <ul class="reg-forms">
@@ -78,34 +75,30 @@
 
                 <form action="#" class="form-reg-person">
 
-                    <label class="form-field-wrap">
-                        Ф.И.О.
-                        <input type="text" class="form-field form-field-dark" placeholder="Иванов Иван Иванович"/>
-                    </label>
+                    <label class="form-field-wrap" for="reg-person-name">Ф.И.О.</label>
+                    <input type="text" id="reg-person-name" class="form-field form-field-dark" placeholder="Иванов Иван Иванович"/>
 
-                    <label class="form-field-wrap">
-                        Город
-                        <input type="text" class="form-field form-field-dark" placeholder="Москва"/>
-                    </label>
 
-                    <label class="form-field-wrap">
-                        Почта
-                        <input type="text" class="form-field" placeholder="ivan@ivanov.ru"/>
-                    </label>
+                    <label class="form-field-wrap" for="reg-person-city">Город</label>
+                    <input type="text" id="reg-person-city" class="form-field form-field-dark" placeholder="Москва"/>
 
-                    <label class="form-field-wrap">
-                        Пароль
-                        <input type="text" class="form-field" placeholder="******"/>
-                    </label>
 
-                    <input class="checkbox-hidden" id="reg-personal-chbx-1" type="checkbox" required/>
-                    <label for="reg-personal-chbx-1" class="form-field-checkbox"></label>
+                    <label class="form-field-wrap" for="reg-person-email">Почта</label>
+                    <input type="text" id="reg-person-email" class="form-field" placeholder="ivan@ivanov.ru"/>
 
-                    <input class="checkbox-hidden" id="reg-personal-chbx-2" type="checkbox" required/>
-                    <label for="reg-personal-chbx-2" class="form-field-checkbox"></label>
 
-                    <input class="checkbox-hidden" id="reg-personal-chbx-3" type="checkbox" required/>
-                    <label for="reg-personal-chbx-3" class="form-field-checkbox"></label>
+                    <label class="form-field-wrap" for="reg-person-password">Пароль</label>
+                    <input type="text" id="reg-person-password" class="form-field" placeholder="******"/>
+
+
+                    <input class="checkbox-hidden" id="reg-person-chbx-1" type="checkbox"/>
+                    <label for="reg-person-chbx-1" class="form-field-checkbox">Какой-то текст</label>
+
+                    <input class="checkbox-hidden" id="reg-person-chbx-2" type="checkbox"/>
+                    <label for="reg-person-chbx-2" class="form-field-checkbox">Какой-то текст</label>
+
+                    <input class="checkbox-hidden" id="reg-person-chbx-3" type="checkbox"/>
+                    <label for="reg-person-chbx-3" class="form-field-checkbox">Какой-то текст</label>
 
                     <input type="submit" value="Зарегистрироваться"/>
 
