@@ -211,25 +211,31 @@
 </div>
 
 <div class="window-sign">
-    
-    <div class="window-inner-sign">
-        
-        <ul class="sign-control">
-            <li>Авторизация</li>
-            <li>Забыли пароль</li>
-            <li><a href="reg-page.html">Зарегистрироваться</a></li>
-        </ul>
 
-        <form action="#" class="form-password-recovery">
+    <div class="window-inner-sign">
+
+        <header>
 
             <div class="close-marker">&#10006;</div>
+
+
+            <ul class="sign-control">
+                <li class="sign-item sign-author active">Авторизация</li>
+                <li class="sign-item sign-recovery">Забыли пароль</li>
+                <li><a href="reg-page.html">Зарегистрироваться</a></li>
+            </ul>
+
+        </header>
+
+
+        <form action="#" class="form-password-recovery">
 
             <p>
                 Введите электронную почту или логин вашего аккаунта, вам будет выслана ссылка для восстановления пароля.
             </p>
 
             <label class="form-field-wrap">
-                <input type="text" class="form-field" placeholder="Электронная почта или логин"/>
+                <input type="text" class="form-field form-field-large" placeholder="Электронная почта или логин"/>
             </label>
 
             <input type="submit" value="Выслать ссылку"/>
@@ -238,24 +244,22 @@
 
         <form action="#" class="form-sign-in">
 
-            <div class="close-marker">&#10006;</div>
-
             <p>
-                Для полного доступа к услугам ACOD.RU необходимо авторизоваться или зарегистрироваться
+                Для полного доступа к услугам ACOD.RU необходимо авторизоваться или зарегистрироваться.
             </p>
 
             <label class="form-field-wrap">
-                <input type="text" class="form-field" placeholder="Электронная почта или логин"/>
+                <input type="text" class="form-field form-field-large" placeholder="Электронная почта или логин"/>
             </label>
 
             <label class="form-field-wrap">
-                <input type="text" class="form-field" placeholder="Пароль"/>
+                <input type="text" class="form-field form-field-large" placeholder="Пароль"/>
             </label>
 
             <input type="submit" value="Войти"/>
 
         </form>
-        
+
     </div>
 
 </div>
